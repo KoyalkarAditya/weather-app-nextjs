@@ -1,5 +1,11 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { redirect } from "next/navigation";
+import { useEffect } from "react";
+
+export default function Page() {
+  useEffect(() => {
+    redirect("/home");
+  }, []);
   return <div></div>;
 }
